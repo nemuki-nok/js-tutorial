@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>JavaScript Practice</title>
 	<style>
-		.box{
+		.box {
 			width: 100px;
 			height: 100px;
 			background-color: skyblue;
@@ -15,7 +15,15 @@
 </head>
 
 <body>
-	<div class="box"></div>
+	<div class="box" id="target"></div>
 </body>
+
+<script>
+	'use strict';	// ブラウザによる厳密なエラーチェック
+
+	document.getElementById('target').addEventListener('click', () => {
+		document.getElementById('target').style.background = 'pink';
+	})
+</script>
 
 </html>
